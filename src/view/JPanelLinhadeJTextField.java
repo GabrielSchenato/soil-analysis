@@ -1,0 +1,385 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package view;
+
+import javax.swing.JTextField;
+import modulo.FormataDecimalCampo;
+
+/**
+ *
+ * @author gabri
+ */
+public class JPanelLinhadeJTextField extends javax.swing.JPanel {
+
+    /**
+     * Creates new form JPanelLinhadeJTextField
+     */
+    private int numero;
+    private int idAmostra;
+    private int idTipoAmostra;
+    private String nome;
+    public JPanelLinhadeJTextField(int numero, int idAmostra, String nome, int idTipoAmostra) {
+        initComponents();
+        this.numero = numero;
+        this.idAmostra = idAmostra;
+        this.nome = nome;
+        this.idTipoAmostra = idTipoAmostra;
+        n.setText(Integer.toString(numero));
+        idAmostraidTipo.setText(idAmostra + "/" + nome);
+        ph.setDocument(new FormataDecimalCampo(10,1));
+        smp.setDocument(new FormataDecimalCampo(10,1));
+        mo.setDocument(new FormataDecimalCampo(10,1));
+        ca.setDocument(new FormataDecimalCampo(10,2));
+        mg.setDocument(new FormataDecimalCampo(10,2));
+        ai.setDocument(new FormataDecimalCampo(10,2));
+        p.setDocument(new FormataDecimalCampo(10,1));
+        na.setDocument(new FormataDecimalCampo(10,2));
+        cu.setDocument(new FormataDecimalCampo(10,2));
+        zn.setDocument(new FormataDecimalCampo(10,2));
+        fe.setDocument(new FormataDecimalCampo(10,2));
+        mn.setDocument(new FormataDecimalCampo(10,2));
+        s.setDocument(new FormataDecimalCampo(10,2));
+        pResina.setDocument(new FormataDecimalCampo(10,2));
+        b.setDocument(new FormataDecimalCampo(10,2));
+        
+        if (idTipoAmostra == 2 || idTipoAmostra == 3 || idTipoAmostra == 4 || idTipoAmostra == 5 || idTipoAmostra == 6 || idTipoAmostra == 7 || idTipoAmostra == 8
+                || idTipoAmostra == 9) {
+
+        } else {
+            cu.setEditable(false);
+        }
+        if (idTipoAmostra == 2 || idTipoAmostra == 3 || idTipoAmostra == 4 || idTipoAmostra == 5 || idTipoAmostra == 6 || idTipoAmostra == 7 || idTipoAmostra == 8
+                || idTipoAmostra == 9) {
+
+        } else {
+            zn.setEditable(false);
+        }
+        if (idTipoAmostra == 2 || idTipoAmostra == 3 || idTipoAmostra == 4 || idTipoAmostra == 5 || idTipoAmostra == 6 || idTipoAmostra == 7 || idTipoAmostra == 8
+                || idTipoAmostra == 9) {
+
+        } else {
+            fe.setEditable(false);
+        }
+        if (idTipoAmostra == 2 || idTipoAmostra == 3 || idTipoAmostra == 4 || idTipoAmostra == 5 || idTipoAmostra == 6 || idTipoAmostra == 7 || idTipoAmostra == 8
+                || idTipoAmostra == 9) {
+
+        } else {
+            mn.setEditable(false);
+        }
+        if (idTipoAmostra == 3 || idTipoAmostra == 6 || idTipoAmostra == 7 || idTipoAmostra == 9) {
+
+        } else {
+            s.setEditable(false);
+        }
+        if (idTipoAmostra == 5 || idTipoAmostra == 7 || idTipoAmostra == 8 || idTipoAmostra == 9) {
+
+        } else {
+            pResina.setEditable(false);
+        }
+        if (idTipoAmostra == 4 || idTipoAmostra == 6 || idTipoAmostra == 8 || idTipoAmostra == 9) {
+
+        } else {
+            b.setEditable(false);
+        }
+    }
+
+    public int getNumero() {
+        return numero;
+    }
+
+    public int getIdAmostra() {
+        return idAmostra;
+    }
+
+    public int getIdTipoAmostra() {
+        return idTipoAmostra;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public JTextField getAi() {
+        return ai;
+    }
+
+    public JTextField getArgila() {
+        return argila;
+    }
+
+    public JTextField getB() {
+        return b;
+    }
+
+    public JTextField getCa() {
+        return ca;
+    }
+
+    public JTextField getCu() {
+        return cu;
+    }
+
+    public JTextField getFe() {
+        return fe;
+    }
+
+    public JTextField getIdAmostraidTipo() {
+        return idAmostraidTipo;
+    }
+
+    public JTextField getK() {
+        return k;
+    }
+
+    public JTextField getMg() {
+        return mg;
+    }
+
+    public JTextField getMn() {
+        return mn;
+    }
+
+    public JTextField getMo() {
+        return mo;
+    }
+
+    public JTextField getN() {
+        return n;
+    }
+
+    public JTextField getNa() {
+        return na;
+    }
+
+    public JTextField getP() {
+        return p;
+    }
+
+    public JTextField getpResina() {
+        return pResina;
+    }
+
+    public JTextField getPh() {
+        return ph;
+    }
+
+    public JTextField getS() {
+        return s;
+    }
+
+    public JTextField getSmp() {
+        return smp;
+    }
+
+    public JTextField getZn() {
+        return zn;
+    }
+
+    /**
+     * This method is called from within the constructor to initialize the form.
+     * WARNING: Do NOT modify this code. The content of this method is always
+     * regenerated by the Form Editor.
+     */
+    @SuppressWarnings("unchecked")
+    // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
+    private void initComponents() {
+
+        n = new javax.swing.JTextField();
+        idAmostraidTipo = new javax.swing.JTextField();
+        ph = new javax.swing.JTextField();
+        smp = new javax.swing.JTextField();
+        argila = new javax.swing.JTextField();
+        mo = new javax.swing.JTextField();
+        ca = new javax.swing.JTextField();
+        mg = new javax.swing.JTextField();
+        ai = new javax.swing.JTextField();
+        p = new javax.swing.JTextField();
+        k = new javax.swing.JTextField();
+        na = new javax.swing.JTextField();
+        cu = new javax.swing.JTextField();
+        zn = new javax.swing.JTextField();
+        fe = new javax.swing.JTextField();
+        mn = new javax.swing.JTextField();
+        s = new javax.swing.JTextField();
+        pResina = new javax.swing.JTextField();
+        b = new javax.swing.JTextField();
+
+        setPreferredSize(new java.awt.Dimension(1825, 30));
+
+        n.setEditable(false);
+        n.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        n.setMinimumSize(new java.awt.Dimension(14, 25));
+        n.setPreferredSize(new java.awt.Dimension(14, 25));
+
+        idAmostraidTipo.setEditable(false);
+        idAmostraidTipo.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        idAmostraidTipo.setMinimumSize(new java.awt.Dimension(14, 25));
+        idAmostraidTipo.setPreferredSize(new java.awt.Dimension(14, 25));
+
+        ph.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        ph.setMinimumSize(new java.awt.Dimension(14, 25));
+        ph.setPreferredSize(new java.awt.Dimension(14, 25));
+
+        smp.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        smp.setMinimumSize(new java.awt.Dimension(14, 25));
+        smp.setPreferredSize(new java.awt.Dimension(14, 25));
+
+        argila.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        argila.setMinimumSize(new java.awt.Dimension(14, 25));
+        argila.setPreferredSize(new java.awt.Dimension(14, 25));
+
+        mo.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        mo.setMinimumSize(new java.awt.Dimension(14, 25));
+        mo.setPreferredSize(new java.awt.Dimension(14, 25));
+
+        ca.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        ca.setMinimumSize(new java.awt.Dimension(14, 25));
+        ca.setPreferredSize(new java.awt.Dimension(14, 25));
+
+        mg.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        mg.setMinimumSize(new java.awt.Dimension(14, 25));
+        mg.setPreferredSize(new java.awt.Dimension(14, 25));
+
+        ai.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        ai.setMinimumSize(new java.awt.Dimension(14, 25));
+        ai.setPreferredSize(new java.awt.Dimension(14, 25));
+
+        p.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        p.setMinimumSize(new java.awt.Dimension(14, 25));
+        p.setPreferredSize(new java.awt.Dimension(14, 25));
+
+        k.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        k.setMinimumSize(new java.awt.Dimension(14, 25));
+        k.setPreferredSize(new java.awt.Dimension(14, 25));
+
+        na.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        na.setMinimumSize(new java.awt.Dimension(14, 25));
+        na.setPreferredSize(new java.awt.Dimension(14, 25));
+
+        cu.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        cu.setMinimumSize(new java.awt.Dimension(14, 25));
+        cu.setPreferredSize(new java.awt.Dimension(14, 25));
+
+        zn.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        zn.setMinimumSize(new java.awt.Dimension(14, 25));
+        zn.setPreferredSize(new java.awt.Dimension(14, 25));
+
+        fe.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        fe.setMinimumSize(new java.awt.Dimension(14, 25));
+        fe.setPreferredSize(new java.awt.Dimension(14, 25));
+
+        mn.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        mn.setMinimumSize(new java.awt.Dimension(14, 25));
+        mn.setPreferredSize(new java.awt.Dimension(14, 25));
+
+        s.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        s.setMinimumSize(new java.awt.Dimension(14, 25));
+        s.setPreferredSize(new java.awt.Dimension(14, 25));
+
+        pResina.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        pResina.setMinimumSize(new java.awt.Dimension(14, 25));
+        pResina.setPreferredSize(new java.awt.Dimension(14, 25));
+
+        b.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        b.setMinimumSize(new java.awt.Dimension(14, 25));
+        b.setPreferredSize(new java.awt.Dimension(14, 25));
+
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
+        this.setLayout(layout);
+        layout.setHorizontalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(n, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(idAmostraidTipo, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(ph, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(smp, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(argila, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(mo, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(ca, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(mg, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(ai, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(p, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(k, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(na, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(cu, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(zn, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(fe, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(mn, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(s, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(pResina, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(b, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        layout.setVerticalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(n, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(idAmostraidTipo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(ph, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(smp, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(argila, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(mo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(ca, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(mg, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(ai, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(p, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(k, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(na, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(cu, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(zn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(fe, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(mn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(s, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(pResina, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(b, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+    }// </editor-fold>//GEN-END:initComponents
+
+
+    // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JTextField ai;
+    private javax.swing.JTextField argila;
+    private javax.swing.JTextField b;
+    private javax.swing.JTextField ca;
+    private javax.swing.JTextField cu;
+    private javax.swing.JTextField fe;
+    private javax.swing.JTextField idAmostraidTipo;
+    private javax.swing.JTextField k;
+    private javax.swing.JTextField mg;
+    private javax.swing.JTextField mn;
+    private javax.swing.JTextField mo;
+    private javax.swing.JTextField n;
+    private javax.swing.JTextField na;
+    private javax.swing.JTextField p;
+    private javax.swing.JTextField pResina;
+    private javax.swing.JTextField ph;
+    private javax.swing.JTextField s;
+    private javax.swing.JTextField smp;
+    private javax.swing.JTextField zn;
+    // End of variables declaration//GEN-END:variables
+}
